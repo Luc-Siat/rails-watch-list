@@ -1,0 +1,17 @@
+.banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(194,185,127, 0.4), rgba(188, 170, 153, 0.4)), url(https://r4.wallpaperbetter.com/wallpaper/926/894/336/disenchantment-desencanto-bean-elfo-wallpaper-53cab3eab8f5dc6d68428e23f1c842e1.jpg);
+  h1 {
+    font-family: sans-serif;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 100px;
+    padding: 45vh 0;
+    font-weight: 200;
+    color: $green;
+    border: 5px solid $cream;
+  }
+}

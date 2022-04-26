@@ -1,0 +1,14 @@
+body {
+  background-color: $cream;
+}
+
+a, ul > li{
+  text-decoration: none;
+}
+.list-links{
+  color: $plum;
+  &:hover {
+    color: $brown;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+}

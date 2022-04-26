@@ -1,0 +1,9 @@
+.btn-custom {
+  border: 2px solid $green;
+  border-radius: 30px;
+  color: $green;
+  &:hover {
+    border: 2px solid $brown;
+    color: $brown;
+  }
+}

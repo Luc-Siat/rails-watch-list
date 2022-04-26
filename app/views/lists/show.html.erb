@@ -1,0 +1,26 @@
+<div class="container">
+  <h1><%= @list.name %></h1>
+  <br>
+  <p>movies:</p>
+  <div class="row">
+    <% @bookmarks.each do |bookmark| %>
+      <% @movie = Movie.find(bookmark.movie_id) %>
+      <div class="col-3 flex-nowrap">
+        <div class="card m-3 h-100">
+          <%# <img src="..." class="card-img-top" alt="..."> %>
+          <%= image_tag(@movie.poster_url)%>
+          <div class="card-body">
+
+            <h5 class="card-title"><%= @movie.title %></h5>
+
+            <p class="card-text"><%= @bookmark.comment %></p>
+            <%= link_to "Delete the bookmark", bookmark_path(bookmark), method: :delete, class: "btn btn-custom" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
+<p>Add a movie</p>
+<%= render partial: "bookmarks/form", bookmark: @bookmark %>
