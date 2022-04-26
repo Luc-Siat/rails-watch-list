@@ -1,5 +1,6 @@
 <div class="container">
   <h1><%= @list.name %></h1>
+  <%= cl_imagetag @list.photo.key, height: 300, width: 300, crop: :fill %>
   <br>
   <p>movies:</p>
   <div class="row">
